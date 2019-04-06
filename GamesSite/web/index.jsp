@@ -22,15 +22,15 @@
     </nav>
 </header>
 <main>
-    <div class="headertje">
-        <div class="gridtest">
+    <div>
+        <div>
 
             <h1>Beheerapplicatie woordenlijst</h1>
 
             <h4>Met deze applicatie kun je de woordenlijst beheren om in het spelletje Hangman te gebruiken!</h4>
         </div>
-        <div class="sectieXD">
-            <section>
+        <div>
+            <section class="indexstatistics">
                 <section>
                     <h3>Aantal woorden</h3>
 

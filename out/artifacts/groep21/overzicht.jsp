@@ -31,34 +31,48 @@
 </header>
 <main>
     <h1> Woordenlijst</h1>
+
     <div class="sectieXD">
         <a href="overzicht?command=download">Download woordenlijst</a>
 
         <a href="overzicht?filter=expert">Expert</a>
         <a href="overzicht?filter=beginner">Beginner</a>
 
-        <ol>
-            <%
-                for (Woord woord : woordenlijst) {
-            %>
-            <li><span><%= woord.getWoord() %></span><span><%= woord.getNiveau() %></span></li>
-            <form action="overzicht" method="post"><input type="hidden" name="woord"
-                                                          value="<%= woord.getWoord() %>"><input name="command"
-                                                                                                 type="hidden"
-                                                                                                 value="verwijder">
+
+    </div>
+
+    <table>
+       <tr>
+           <th>Woord</th>
+           <th>Niveau</th>
+           <th></th>
+       </tr>
+        <%
+            for (Woord woord : woordenlijst) {
+        %>
+
+        <tr>
+            <td><%= woord.getWoord() %></td>
+            <td><%= woord.getNiveau() %></td>
+            <td>
+                <form action="overzicht" method="post"><input type="hidden" name="woord"
+                                                              value="<%= woord.getWoord() %>"><input name="command"
+                                                                                                     type="hidden"
+                                                                                                     value="verwijder">
                 <button type="submit">Delete</button>
             </form>
-            <form action="overzicht" method="post"><input type="hidden" name="woord"
-                                                          value="<%= woord.getWoord() %>"><input name="command"
-                                                                                                 type="hidden"
-                                                                                                 value="change">
-                <button type="submit">Wijzig</button>
-            </form>
-            <%
-                }
-            %>
-        </ol>
-    </div>
+                <form action="overzicht" method="post"><input type="hidden" name="woord"
+                                                              value="<%= woord.getWoord() %>"><input name="command"
+                                                                                                     type="hidden"
+                                                                                                     value="change">
+                    <button type="submit">Wijzig</button>
+                </form>
+            </td>
+        </tr>
+        <%
+            }
+        %>
+    </table>
 
 
 </main>
