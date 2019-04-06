@@ -1,0 +1,20 @@
+4
+Rechthoek 10 350 300 40
+Lijnstuk 160 350 160 50
+Lijnstuk 160 50 280 50
+Lijnstuk 280 50 280 100
+Cirkel 280 125 25
+Cirkel 270 118 2
+Cirkel 290 118 2
+Cirkel 280 128 2
+Lijnstuk 270 138 290 138
+Lijnstuk 280 150 280 250
+Lijnstuk 280 250 240 310
+Lijnstuk 280 250 320 310
+Cirkel 240 310 5
+Cirkel 240 310 5
+Cirkel 320 310 5
+Lijnstuk 280 200 230 170
+Lijnstuk 280 200 330 170
+Cirkel 230 170 5
+Cirkel 330 170 5

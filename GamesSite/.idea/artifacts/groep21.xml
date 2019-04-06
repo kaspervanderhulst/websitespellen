@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="groep21">
+    <output-path>$PROJECT_DIR$/../out/artifacts/groep21</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="GamesSite" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="D:/../../../Servers/postgresql-42.2.5.jar" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="GamesSite/web/Web" />
+    </root>
+  </artifact>
+</component>
